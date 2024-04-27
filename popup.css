@@ -1,0 +1,53 @@
+.modal {
+    background-color: white;
+    padding: 40px;
+    width: 320px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.close-first {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+.modal-name
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 36pt;
+    font-weight: 700;
+    text-align: center;
+
+}
+.modal-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+}
+.close-second
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18pt;
+    width: 200px;
+    height: 60px;
+    background-color: #1D4169;
+    color: white;
+    margin: auto;
+    margin-top: 30%;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.close-second:hover
+{
+    background-color: #829dd0;
+}
