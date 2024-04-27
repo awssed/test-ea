@@ -1,0 +1,91 @@
+.Timer{
+  font-family: 'Popins',sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.days-count, .hours-count, .minutes-count, .seconds-count
+{
+  font-size: 72pt;
+  font-weight: 600;
+  color: #162C4E;
+  width: auto;
+  height: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  animation: slide-in 1s forwards;
+}
+.days-count p, .hours-count p, .minutes-count p, .seconds-count p{
+  margin: 0;
+}
+.TimerLabel{
+  background: url("../public/Vector.svg");
+  font-family: 'Poppins', sans-serif;
+  font-size: 16pt;
+  font-weight: 400;
+  width: 154px;
+  height: 60px;
+  color: white;
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slide-in 1s forwards;
+}
+.TimerLabel p{
+  margin: 0;
+}
+.db-dot
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 72pt;
+  font-weight: 600;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #162C4E;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+  animation: slide-in 1s forwards;
+
+}
+@media (max-width: 768px) {
+  .days-count, .hours-count, .minutes-count, .seconds-count {
+    font-size: 36pt;
+  }
+
+  .TimerLabel {
+    height:45px;
+    width: 70px;
+    font-size: 12pt;
+  }
+
+  .db-dot {
+    font-size: 36pt;
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 360px) {
+  .Timer{
+    width: 100%;
+  }
+}
+@keyframes slide-in  {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
