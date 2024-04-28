@@ -1,0 +1,133 @@
+#root{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+header{
+    height: 15vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+footer{
+    flex-shrink: 0;
+}
+.p-main{
+    animation: slide-in-main 1s forwards;
+    font-size: 72pt;
+    text-align: center;
+    width: 80%;
+    color: #162C4E;
+    opacity: 30%;
+    align-items: center;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgba(0, 0, 0.2);
+    margin: 0;
+
+}
+.p-under-main
+{
+    font-size: 18pt;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    width: 27%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    animation: slide-in 1s forwards;
+}
+.p-check{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: 400;
+    margin-top:1% ;
+    animation: slide-in 1s forwards;
+}
+.GoEventButton {
+    display: flex;
+    width: 240px;
+    height: 60px;
+    font-size: 18pt;
+    border-radius: 20pt;
+    align-items: center;
+    background-color: #1D4169;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-left: auto;
+    margin-right: auto;
+    animation: slide-in 1s forwards;
+}
+.GoEventButton:hover
+{
+    background-color: #829dd0;
+}
+.GoEventButton span {
+    display: block;
+    margin: auto;
+    font-weight: 300;
+}
+
+.GoEventButton img {
+    order: 1;
+    display: block;
+    margin-left: 5px;
+}
+@media (max-width: 768px) {
+    .p-main {
+        font-size: 36pt;
+        margin-bottom: 3vw;
+    }
+
+    .p-under-main {
+        font-size: 16pt;
+        margin-bottom: 2vh;
+        width: 60%;
+    }
+
+    .p-check {
+        font-size: 16pt;
+    }
+
+    .GoEventButton {
+        width: 240px;
+        height: 60px;
+    }
+
+    .GoEventButton span {
+        font-size: 16pt;
+    }
+}
+@keyframes slide-in  {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+@keyframes slide-in-main  {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 0.3;
+        transform: translatey(0);
+    }
+}
