@@ -5,7 +5,7 @@ import Popup from "reactjs-popup";
 import PopUp from "./PopUp";
 import Pop from "./PopUp";
 import rightArrow from"./arrow-right.svg"
-import logo from "./Group.svg"
+import group from "./Group.svg"
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
               </div>
               <div className="logo">
                   <a href="index.html">
-                      <img src={logo}/>
+                      <img src={group}/>
                   </a>
               </div>
               <div className="img-right">
