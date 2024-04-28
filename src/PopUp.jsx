@@ -5,7 +5,7 @@ import arrowIcon from "./arrow-right.svg";
 
 function Pop(props) {
     const [email, setEmail] = useState("");
-    const [isFormValid, setIsFormValid] = useState(false);
+    const [isFormValid, setIsFormValid] = useState(true);
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [isError, setIsError] = useState(false);
 
@@ -16,7 +16,6 @@ function Pop(props) {
 
     const validateForm = () => {
         setIsFormValid(isValidEmail(email));
-        console.log(isValidEmail(email));
     };
 
     function isValidEmail(email) {
